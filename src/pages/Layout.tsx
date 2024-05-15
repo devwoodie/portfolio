@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Header } from '../components/Layout/Header';
 import { Outlet, useLocation } from 'react-router-dom';
+import { Footer } from '../components/Layout/Footer';
 
 export const Layout = () => {
 
@@ -24,6 +25,7 @@ export const Layout = () => {
             <div className={`max-w-[1280px] min-w-[1280px] flex-1 start ${fade}`}>
                 <Outlet />
             </div>
+            <Footer />
         </div>
     )
 }
