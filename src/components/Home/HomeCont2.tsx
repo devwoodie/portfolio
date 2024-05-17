@@ -10,7 +10,7 @@ export const HomeCont2 = () => {
     }
 
     return (
-        <div className='mt-[300px]'>
+        <div className='mt-[200px]'>
             <div className="container">
                 <div className="tabs m-auto">
                     <input onChange={handleChange} type="radio" id="radio-1" name="tabs" defaultChecked={true} />

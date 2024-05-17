@@ -4,7 +4,7 @@ type TProps = {
     tabId: string
 }
 
-export const Cont2Tab = ({tabId}: TProps) => {
+export const Cont2Tab = ({ tabId }: TProps) => {
 
     const intList = [
         {
@@ -48,58 +48,72 @@ export const Cont2Tab = ({tabId}: TProps) => {
         },
     ]
 
-    const skillList = ["React", "JavaScript", "TypeScript", "HTML5", "Tailwind", "css3", "Sass", "ajax", "axios", "Redux", "jquery" ]
+    const skillList = ["React", "TypeScript", "JavaScript", "HTML5", "Tailwind", "css3", "Sass", "ajax", "axios", "Redux", "jquery"]
+    const toolList = ["Git", "Github", "Postman", "Zeplin", "figma", "PhotoShop", "XD", "VisualStudio", "IntelliJ"]
 
     return (
         <div className='w-[800px] p-6 mt-5 m-auto min-h-[500px]'>
-            {tabId === "radio-1" ? 
-            <p className='text-center'>
-                개발자로서 <b>새로운 것을 배우는 욕심</b>과 그에 맞게 <b>성장하는 목표</b>를 갖고 있습니다.<br/>
-                <br/>
-                협업을 통해 함께 생각하고 최선의 결과물을 도출해 내는 것을 좋아합니다.<br/>
-                계속해서 무언가를 만들어 내는 것에 흥미가 있고, 맡은 일에 후회 없도록 마무리 하는 것에 뿌듯함을 느낍니다.<br/>
-                현재 개발 트렌드를 배우기 위해 개발 컨퍼런스에 참여하는 것을 좋아합니다.<br/>
-                <div className='mt-10 w-[400px] m-auto text-left'>
-                    <h3>[ Education ]</h3>
-                    {intList?.map((item, key) => (
-                        <div key={key} className='pt-2'>
-                            <span className='date'>{item.date}</span>
-                            <span className='title'>{item.title}</span>
+            {tabId === "radio-1" ?
+                <p className='text-center'>
+                    개발자로서 <b>새로운 것을 배우는 욕심</b>과 그에 맞게 <b>성장하는 목표</b>를 갖고 있습니다.<br />
+                    <br />
+                    협업을 통해 함께 생각하고 최선의 결과물을 도출해 내는 것을 좋아합니다.<br />
+                    계속해서 무언가를 만들어 내는 것에 흥미가 있고, 맡은 일에 후회 없도록 마무리 하는 것에 뿌듯함을 느낍니다.<br />
+                    현재 개발 트렌드를 배우기 위해 개발 컨퍼런스에 참여하는 것을 좋아합니다.<br />
+                    <div className='mt-10 w-[400px] m-auto text-left'>
+                        <h3>[ Education ]</h3>
+                        {intList?.map((item, key) => (
+                            <div key={key} className='pt-2'>
+                                <span className='date'>{item.date}</span>
+                                <span className='title'>{item.title}</span>
+                            </div>
+                        ))}
+                    </div>
+                </p> : tabId === "radio-2" ?
+                    <div>
+                        <div className='w-[400px] m-auto'>
+                            <h3>[ Career ]</h3>
+                            {expList?.map((item, key) => (
+                                <div key={key} className='pt-2'>
+                                    <span className='date'>{item.date}</span>
+                                    <span className='title'>{item.title}</span>
+                                    <span className='job'>{item.job}</span>
+                                </div>
+                            ))}
                         </div>
-                    ))}
-                </div>
-            </p> : tabId === "radio-2" ? 
-            <div>
-                <div className='w-[400px] m-auto'>
-                    <h3>[ Career ]</h3>
-                    {expList?.map((item, key) => (
-                        <div key={key} className='pt-2'>
-                            <span className='date'>{item.date}</span>
-                            <span className='title'>{item.title}</span>
-                            <span className='job'>{item.job}</span>
+                        <div className='w-[400px] m-auto mt-10'>
+                            <h3>[ Activities ]</h3>
+                            {actList?.map((item, key) => (
+                                <div key={key} className='pt-2'>
+                                    <span className='date'>{item.date}</span>
+                                    <span className='title'>{item.title}</span>
+                                    <span className='job'>{item.job}</span>
+                                </div>
+                            ))}
                         </div>
-                    ))}
-                </div>
-                <div className='w-[400px] m-auto mt-10'>
-                    <h3>[ Activities ]</h3>
-                    {actList?.map((item, key) => (
-                        <div key={key} className='pt-2'>
-                            <span className='date'>{item.date}</span>
-                            <span className='title'>{item.title}</span>
-                            <span className='job'>{item.job}</span>
+                    </div> : tabId === "radio-3" ?
+                    <div>
+                        <div className='m-auto w-[400px]'>
+                            <h3>[ Skill ]</h3>
+                            <div className='flex flex-wrap  w-[400px]'>
+                                {skillList?.map((item, key) => (
+                                    <span key={key} className='date mt-2'>{item}</span>
+                                ))}
+                            </div>
                         </div>
-                    ))}
-                </div>
-            </div> : tabId === "radio-3" ? 
-            <div className='m-auto'>
-                {skillList?.map((item, key) => (
-                    <span key={key} className='date'>{item}</span>
-                ))}
-            </div> : null
-        }
+                        <div className='m-auto w-[400px] mt-10'>
+                            <h3>[ Tool ]</h3>
+                            <div className='flex flex-wrap  w-[400px]'>
+                                {toolList?.map((item, key) => (
+                                    <span key={key} className='date mt-2'>{item}</span>
+                                ))}
+                            </div>
+                        </div>
+                    </div> : null
+            }
 
-        <style>
-            {`
+            <style>
+                {`
                 h3{
                     font-size: 20px;
                     font-weight: bold;
@@ -119,7 +133,7 @@ export const Cont2Tab = ({tabId}: TProps) => {
                     color: #737373;
                 }
             `}
-        </style>
+            </style>
         </div>
     )
 }
