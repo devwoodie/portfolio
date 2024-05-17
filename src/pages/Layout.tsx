@@ -22,7 +22,7 @@ export const Layout = () => {
     return (
         <div className='flex flex-wrap justify-center'>
             <Header />
-            <div className={`max-w-[1280px] min-w-[1280px] flex-1 start ${fade}`}>
+            <div className={`max-w-[1280px] min-w-[1280px] flex-1 start ${fade} mt-[80px]`}>
                 <Outlet />
             </div>
             <Footer />
