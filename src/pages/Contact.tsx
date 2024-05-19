@@ -1,28 +1,77 @@
 import React from 'react';
+import { Btn } from '../components/Contact/Btn';
 
 export const Contact = () => {
     return (
-        <div>
+        <div className='mt-[80px] mb-[150px]'>
+            <h2 className='text-[25px] mb-5 text-center font-black'>C O N T A C T</h2>
+            <div className="container">
+                <div className="hero">
+                    <form action="" className="form">
+                        <input 
+                            type="email" 
+                            name="email" 
+                            id="email" 
+                            className="input dark:bg-[#e9e9e9] dark:shadow-none" 
+                            placeholder="Email" 
+                        />
+                        <textarea 
+                            name="content" 
+                            id="content" 
+                            className="input textarea resize-none dark:bg-[#e9e9e9] dark:shadow-none" 
+                            placeholder="Message" 
+                        ></textarea>
+                        <div className='w-full mt-10 text-right'>
+                            <Btn />
+                        </div>
+                    </form>
+                </div>
+            </div>
 
-            <button
-                className="flex items-center bg-blue-500 text-white gap-1 px-4 py-2 cursor-pointer text-gray-800 font-semibold tracking-widest rounded-md hover:bg-blue-400 duration-300 hover:gap-2 hover:translate-x-3"
-            >
-                Send
-                <svg
-                    className="w-5 h-5"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
-                        strokeLinejoin="round"
-                        stroke-Linecap="round"
-                    ></path>
-                </svg>
-            </button>
+
+            <style>
+                {`
+                    .container {
+                        height: 100%;
+                        width: 100%;
+                      }
+                      
+                      .hero {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                      }
+                      
+                      .form {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1rem;
+                        width: 45%;
+                      }
+                      
+                      .input {
+                        padding: 1rem 1.2rem;
+                        margin: 1rem;
+                        border-radius: 16px;
+                        display: block;
+                        width: 100%;
+                        border: none;
+                        box-shadow: inset 6px 6px 8px rgba(97, 97, 97, 0.075),
+                          6px 6px 6px rgba(255, 255, 255, 0.781);
+                        outline: none;
+                        background-color: inherit;
+                        font-size: inherit;
+                        color: #575757;
+                      }
+                      .textarea{
+                        min-height: 200px;
+                      }
+                `}
+            </style>
         </div>
     )
 }
