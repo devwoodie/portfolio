@@ -7,7 +7,7 @@ export const HomeCont4 = () => {
 
     return (
         <div className='pt-[250px] pb-[100px] text-center'>
-                <h2 className='text-[25px]'>궁금하신 사항이 있으시면 연락 바랍니다.</h2>
+                <h2 className='text-[25px]'>궁금한 점이 있으시면 언제든지 연락 주세요.</h2>
             <div className='text-center m-auto mt-6'>
                 <button className='m-auto home-btn bg-primary-1 text-white' onClick={() => navigate("/contact")}>
                     연락하기
