@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Btn } from '../components/Contact/Btn';
+import toast, { Toaster } from 'react-hot-toast';
 
 export const Contact = () => {
+
+    const [email, setEmail] = useState<string>("");
+    const [content, setContent] = useState<string>("");
+
     return (
         <div className='mt-[80px] mb-[150px]'>
             <h2 className='text-[25px] mb-5 text-center font-black'>C O N T A C T</h2>
@@ -10,22 +15,33 @@ export const Contact = () => {
                     <form action="" className="form">
                         <input 
                             type="email" 
-                            name="email" 
+                            name="user_email" 
                             id="email" 
-                            className="input dark:bg-[#e9e9e9] dark:shadow-none" 
+                            className="input dark:bg-[#cccccc] dark:placeholder:text-[#575757] dark:shadow-none" 
                             placeholder="Email" 
+                            value={email}
+                            onChange={(e) => {setEmail(e.target.value)}}
+                            required={true}
                         />
                         <textarea 
                             name="content" 
                             id="content" 
-                            className="input textarea resize-none dark:bg-[#e9e9e9] dark:shadow-none" 
+                            className="input textarea resize-none dark:bg-[#cccccc] dark:placeholder:text-[#575757] dark:shadow-none" 
                             placeholder="Message" 
+                            value={content}
+                            onChange={(e) => {setContent(e.target.value)}}
+                            required={true}
                         ></textarea>
                         <div className='w-full mt-10 text-right'>
-                            <Btn />
+                            <Btn
+                                email={email}
+                                content={content}
+                            />
                         </div>
                     </form>
                 </div>
+
+                <Toaster />
             </div>
 
 
