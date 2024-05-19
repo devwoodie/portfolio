@@ -33,7 +33,7 @@ html, body{
 	/* background-color: #e6e6e6; */
 }
 html {
-	scroll-behavior: smooth;
+	/* scroll-behavior: smooth; */
 }
 body {
 	line-height: 1;

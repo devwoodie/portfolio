@@ -36,7 +36,7 @@ export const Cont3Box = () => {
                         </div>
                         <div className="view-more" onClick={() => navigate("/project")}>
                             <button className="view-more-button">View more</button>
-                            <svg className="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+                            <svg className="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
                         </div>
                     </div>
                 </div>

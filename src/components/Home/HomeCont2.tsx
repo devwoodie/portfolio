@@ -11,14 +11,14 @@ export const HomeCont2 = () => {
 
     return (
         <div className='mt-[200px]'>
-            <div className="container">
-                <div className="tabs m-auto">
+            <div className="container ">
+                <div className="tabs m-auto dark:bg-[#42444e]">
                     <input onChange={handleChange} type="radio" id="radio-1" name="tabs" defaultChecked={true} />
-                    <label className="tab" htmlFor="radio-1">Introduce</label>
+                    <label className="tab dark:text-white" htmlFor="radio-1">Introduce</label>
                     <input onChange={handleChange} type="radio" id="radio-2" name="tabs" />
-                    <label className="tab" htmlFor="radio-2">Experience</label>
+                    <label className="tab dark:text-white" htmlFor="radio-2">Experience</label>
                     <input onChange={handleChange} type="radio" id="radio-3" name="tabs" />
-                    <label className="tab" htmlFor="radio-3">Skill</label>
+                    <label className="tab dark:text-white" htmlFor="radio-3">Skill</label>
                     <span className="glider"></span>
                 </div>
             </div>

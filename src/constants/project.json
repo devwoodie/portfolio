@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "title": "별자취",
+        "type": "App(aos/ios)",
+        "company": "비사이드(B-Side) - 개발 동아리",
+        "description": "마음을 기록하는 관계 관리 - 선물, 경조사비 등 주고 받은 내역을 기록해서 관계를 발전시키는 앱",
+        "git": "https://github.com/bsideproject/startrail-front-end",
+        "site": "https://apps.apple.com/kr/app/%EB%B3%84%EC%9E%90%EC%B7%A8/id6453561008",
+        "img": "1.png"
+    },
+    {
+        "id": 2,
+        "title": "일기록",
+        "type": "Web",
+        "company": "토이 프로젝트",
+        "description": "매일 일기를 쓰고 포인트를 모아 미니홈을 꾸미는 서비스",
+        "git": "https://github.com/ilgilog/ilgilog-fe",
+        "site": "https://www.ilgilog.today",
+        "img": "2.png"
+    },
+    {
+        "id": 3,
+        "title": "읽어보새",
+        "type": "Web",
+        "company": "스위프(SWYP) - 개발 동아리",
+        "description": "책 읽고, 키우고, 날아보자! - 목표를 정하고 책을 읽어보아요.",
+        "git": "https://github.com/Read-bird/readbird-fe",
+        "site": "https://readbird.swygbro.com",
+        "img": "3.png"
+    },
+    {
+        "id": 4,
+        "title": "IT 서비스 제공 업체",
+        "type": "Web/App FE Developer",
+        "company": "회사",
+        "description": "React-Native webview를 이용한 하이브리드 앱",
+        "git": "",
+        "site": "https://spring-fang-155.notion.site/IT-d6c34909dee04beaa351cf4d58e02c6a?pvs=4",
+        "img": ""
+    },
+    {
+        "id": 5,
+        "title": "eMoney(이머니)",
+        "type": "Web/Mobile Publisher",
+        "company": "회사",
+        "description": "증권 투자의 길을 안내하는 AI 종목 추천 서비스 제공 기업",
+        "git": "",
+        "site": "https://spring-fang-155.notion.site/eMoney-91fcd7af8d1a4788b255f0d6c6966674?pvs=4",
+        "img": ""
+    },
+    {
+        "id": 6,
+        "title": "savings-book(가계부)",
+        "type": "Web",
+        "company": "토이 프로젝트",
+        "description": "이번 달 수입/지출 기록하고 그래프로 한 눈에 보기",
+        "git": "https://github.com/devwoodie/savings-book-frontend",
+        "site": "",
+        "img": "6.png"
+    },
+    {
+        "id": 7,
+        "title": "wmii(what movie is it?)",
+        "type": "Mobile Web",
+        "company": "토이 프로젝트",
+        "description": "영화 소개, 검색, 커뮤니티로 구성된 모바일 웹",
+        "git": "https://github.com/devwoodie/wmii-frontend",
+        "site": "https://wmii-85b73.web.app",
+        "img": "7.png"
+    }
+]
