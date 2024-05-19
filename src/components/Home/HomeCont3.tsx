@@ -12,7 +12,7 @@ export const HomeCont3 = () => {
         <div className='pt-[80px] pb-[80px] border-t-[1px] border-solid border-[#c4c4c4] flex justify-between'>
             <div>
                 <h2 className='text-[35px] font-black'>포트폴리오 (프로젝트 상세)</h2>
-                <p className='text-[30px] mt-5'>회사에서 진행했던 프로젝트와 개발 동아리에서 진행했던 프로젝트<br/>또는 토이 프로젝트들을 정리했습니다.</p>
+                <p className='text-[25px] mt-5'>회사에서 진행했던 프로젝트와 개발 동아리에서 진행했던 프로젝트<br/>또는 토이 프로젝트들을 정리했습니다.</p>
                 <button className='home-btn bg-primary-1 text-white mt-10' onClick={() => navigate("/project")}>
                     전체 프로젝트
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5">
