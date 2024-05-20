@@ -1,3 +1,4 @@
+import { Mobile } from "./pages/Mobile";
 import { PageList } from "./router/Router";
 import { useMediaQuery } from 'react-responsive';
 
@@ -7,7 +8,7 @@ function App() {
 
   return (
     <>
-      {!isSmallScreen ? <PageList /> : null}
+      {!isSmallScreen ? <PageList /> : <Mobile />}
     </>
   );
 }

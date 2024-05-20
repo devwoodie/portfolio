@@ -54,7 +54,7 @@ export const Cont2Tab = ({ tabId }: TProps) => {
     return (
         <div className='w-[800px] p-6 mt-5 m-auto min-h-[500px]'>
             {tabId === "radio-1" ?
-                <p className='text-center'>
+                <div className='text-center'>
                     협업을 통해 최선의 결과물을 도출해 내는 것을 좋아하며<br />맡은 일에 후회 없도록 마무리하는 것에 뿌듯함을 느낍니다.<br />
                     <br />
                     현재 개발 트렌드를 배우기 위해 개발 콘퍼런스에 끊임없이 참여하여<br />
@@ -68,7 +68,7 @@ export const Cont2Tab = ({ tabId }: TProps) => {
                             </div>
                         ))}
                     </div>
-                </p> : tabId === "radio-2" ?
+                </div> : tabId === "radio-2" ?
                     <div>
                         <div className='w-[400px] m-auto'>
                             <h3>[ Career ]</h3>
